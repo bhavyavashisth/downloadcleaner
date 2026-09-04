@@ -31,7 +31,7 @@ func Scan(dir string) ([]FileInfo, error) {
 			continue // skip files we can't read
 		}
 
-		// get extension (lowercase for consistency)
+		// get extension 
 		ext := strings.ToLower(filepath.Ext(entry.Name()))
 
 		files = append(files, FileInfo{
