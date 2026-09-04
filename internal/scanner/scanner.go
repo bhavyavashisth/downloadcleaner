@@ -1,4 +1,3 @@
-// internal/scanner/scanner.go
 package scanner
 
 import (
