@@ -131,11 +131,11 @@ func (a *App) showPreview(plan organizer.Plan) {
 	}
 
 	if len(plan.Unknown) > 0 {
-		text.WriteString(fmt.Sprintf("\n⚠️  %d files will be left untouched\n", len(plan.Unknown)))
+		text.WriteString(fmt.Sprintf("\n⚠  %d files will be left untouched\n", len(plan.Unknown)))
 	}
 
 	if len(plan.Collisions) > 0 {
-		text.WriteString(fmt.Sprintf("⚠️  %d filename conflicts will be resolved\n", len(plan.Collisions)))
+		text.WriteString(fmt.Sprintf("⚠  %d filename conflicts will be resolved\n", len(plan.Collisions)))
 	}
 
 	modal := tview.NewModal().
