@@ -177,7 +177,7 @@ func (a *App) showPreview() {
 	a.app.SetRoot(modal, true)
 }
 
-
+// show completion 
 func (a *App) showComplete(plan organizer.Plan) {
 	var text strings.Builder
 	text.WriteString("✅ CLEANUP COMPLETE\n\n")
@@ -224,7 +224,7 @@ func (a *App) addRule() {
 }
 
 func (a *App) editRule() {
-
+	// similar to add but pre-filled
 	modal := tview.NewModal().
 		SetText("Edit rule: select a rule from the list first").
 		AddButtons([]string{"OK"}).
